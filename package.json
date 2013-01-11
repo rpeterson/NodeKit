@@ -4,7 +4,9 @@
   "private": true,
   "dependencies": {
     "union": "0.3.0",
-    "flatiron": "0.3.0"
+    "flatiron": "0.3.0",
+    "resourceful": "0.3.3",
+    "broadway": "0.2.6"
   },
   "devDependencies": {
     "api-easy": "0.3.2",
@@ -12,7 +14,7 @@
   },
   "scripts": {
     "test": "vows --spec",
-    "start": "node app.js"
+    "start": "forever -c nodemon app.coffee"
   },
   "name": "NodeKit",
   "author": "Ryan J. Peterson",
